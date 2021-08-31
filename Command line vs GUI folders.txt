@@ -1,0 +1,7 @@
+﻿Kavin W
+Mart 120
+Michael Cassens
+30 August 2021
+
+
+Command line vs GUI folders. Both have their perks but I believe that when examining the current trend towards GUI related interfaces it's clear which is superior. GUI folders are much easier for an entry level user to understand and use while command line, while not particularly difficult in nature does require a minor bit of knowledge when it comes to file pathing and command line in general. Both are used by many but I believe that GUI folders tend to dominate the mainstream computer user audience while command line tends to stick to professional and amateur coders alike.
