@@ -3,46 +3,39 @@
     <meta charset="utf-8">
     <title>Third Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
     <style>
     body {
         margin: 2em 5%;
         font-family: Georgia, "Times New Roman", Times, serif;
-    }
-    h1, h2 {
-        color:  #134;
-    }
-    h1 {
-        font-size: 2.0em;
-        font-display: bold;
-        border-bottom: 1px solid #134;
         text-align: center;
     }
-    h2{
-        font-family: Verdana, Geneva, sans-serif;
-        font-size: 1 em;
-        font-display: bold;
-        text-align: center;
-
-    }
-    p{
-        color: #134;
-        text-align: center;
-    }
-    li{
-        color: #134;
-        text-align: center;
-    }
+   
+    
 </style>
 </head>
 <body>
     <h1>Contact Us</h1>
     <form action="nextPage.html" type="Post">
-        First Name: <input type="text" id="fName"><br>
-        Last Name: <input type="text" id="lName"><br>
-        Email: <input type="text" name="email"><br>
-        Accept Terms of Agreement? <input type="checkbox" id="yes" name="source" value="yes">
-        <label for="yes">Yes</label> <input type="checkbox" id="no" name="source2" value="no"><label for="no">No</label>
-        <button id="mySubmit" type="submit">Submit</button>
+        <label>First Name: <input type="text" id="fName" required=""></label><br>
+        
+        <label>Last Name: <input type="text" id="lName" required=""></label><br>
+        
+        <label>Email: <input type="text" name="email" required></label><br>
+        
+        <label for="source">Accept Terms of Agreement?</label>
+        
+        <label for="yes">Yes<input type="radio" id="yes" name="source" value="no" required></label>
+        
+        <label for="no">No<input type="radio" id="no" name="source" required></label>
+        
+        <button id="mySubmit" type="submit" onclick="focusInput()" required>Submit</button>
     </form>
+
+    <script>
+        function focusInput() {
+            document.getElementById("input1").focus();
+        }
+    </script>
 </body>
 </html>
